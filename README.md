@@ -46,7 +46,7 @@ or getting latest `xterm` release from `invisible-island.net`:
 
 ## Test
 
-To test wether it works enter:
+To test whether it works enter:
 
     $ echo -en '\x1bP1pS(E)W(I(W))P[220,250]T(S02)"ReGIS :) -> It works!"\x1b\\'
 
@@ -63,6 +63,11 @@ There are some more useful options which can be configured.
     $ ./configure --help | grep enable
     
 provides a list.
+
+
+## Customizing xterm
+
+See .Xresources @ https://wiki.debian.org/Xresources and the links therein.
 
 
 :date:
