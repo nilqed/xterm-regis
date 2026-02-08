@@ -38,10 +38,31 @@ or getting latest `xterm` release from `invisible-island.net`:
     $ sudo apt install -y libxaw7-dev libncurses-dev libxft-dev
     $ wget https://invisible-island.net/datafiles/release/xterm.tar.gz
     $ tar xf xterm.tar.gz
-    $ cd xterm-392
+    $ cd xterm-XXX   # where XXX=version-number
     $ ./configure --enable-regis-graphics
     $ make
     $ sudo make install
+
+
+## Test
+
+To test wether it works enter:
+
+    $ echo -en '\x1bP1pS(E)W(I(W))P[220,250]T(S02)"ReGIS :) -> It works!"\x1b\\'
+
+
+![works](works.png)
+
+
+## Other configure options
+
+There are some more useful options which can be configured.  
+
+    $ ./configure --help 
+    $ ## or
+    $ ./configure --help | grep enable
+    
+provides a list.
 
 
 :date:
